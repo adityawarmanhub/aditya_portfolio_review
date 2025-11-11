@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Review - Aditya Warman</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Define the Inter font as the default sans-serif font */
+        html {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom styles for the vertical timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem; /* 48px */
+            padding-bottom: 2rem; /* 32px */
+            border-left: 4px solid #34d399; /* emerald-400 */
+        }
+        .timeline-item:last-child {
+            border-left: 4px solid #1f2937; /* gray-800 */
+        }
+        /* The dot on the timeline */
+        .timeline-dot {
+            position: absolute;
+            left: -11px; /* (20px dot + 4px border) / 2 - 4px line */
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #10b981; /* emerald-500 */
+            border: 4px solid #111827; /* gray-900 */
+        }
+        .timeline-item:last-child .timeline-dot {
+            background-color: #34d399; /* emerald-400 */
+        }
+
+        /* Custom accent for list items */
+        .custom-list li {
+            position: relative;
+            padding-left: 2rem; /* 32px */
+            margin-bottom: 1rem; /* 16px */
+        }
+        .custom-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #34d399; /* emerald-400 */
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-gray-900 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                Performance & Scope Portfolio
+            </h1>
+            <p class="mt-6 text-xl leading-8 text-gray-300">
+                Aditya Warman | Customer Service Manager
+            </p>
+            <div class="mt-10 mx-auto max-w-3xl">
+                <p class="text-lg p-6 bg-emerald-900/50 text-emerald-100 rounded-lg border border-emerald-700">
+                    <strong>A Business Case for Compensation Alignment:</strong>
+                    This document outlines my expanded scope, quantifiable value delivered, and strategic initiatives since August 2023.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section - The Core Case -->
+    <section class="bg-gray-800 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:max-w-none">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center mb-16">
+                    My Core Contribution
+                </h2>
+                <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2">
+                    <!-- Stat 1: Savings -->
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-300">Annualized Savings Delivered</dt>
+                        <dd class="order-first text-5xl font-extrabold tracking-tight text-emerald-400 sm:text-6xl">
+                            IDR 1.8B
+                        </dd>
+                        <dd class="text-base text-gray-300">
+                            From optimizing T1/T2 headcount (30 agents) while expanding role scope.
+                        </dd>
+                    </div>
+                    <!-- Stat 2: Scope -->
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-300">Role Scope Expansion</dt>
+                        <dd class="order-first text-5xl font-extrabold tracking-tight text-emerald-400 sm:text-6xl">
+                            2x
+                        </dd>
+                        <dd class="text-base text-gray-300">
+                            From managing E-commerce only to full E-commerce + Cash Loan units.
+                        </dd>
+                    </div>
+                    <!-- Stat 3: Quality -->
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-300">T2 Loan SLA</dt>
+                        <dd class="order-first text-5xl font-extrabold tracking-tight text-emerald-400 sm:text-6xl">
+                            >90%
+                        </dd>
+                        <dd class="text-base text-gray-300">
+                            Improved from <strong>62.55%</strong>, proving efficiency gains did not sacrifice service quality.
+                        </dd>
+                    </div>
+                    <!-- Stat 4: CSAT -->
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-300">E-commerce CSAT Maintained</dt>
+                        <dd class="order-first text-5xl font-extrabold tracking-tight text-emerald-400 sm:text-6xl">
+                            87-89%
+                        </dd>
+                        <dd class="text-base text-gray-300">
+                            Maintained high customer satisfaction in the core business unit during rapid expansion.
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="bg-gray-900 py-20 sm:py-24">
+        <div class="mx-auto max-w-3xl px-6 lg:px-8">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center mb-16">
+                My Evolving Role
+            </h2>
+            
+            <div class="flow-root">
+                <!-- Vertical Timeline -->
+                <div>
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-emerald-400">August 2023</time>
+                        <h3 class="text-xl font-semibold text-white">Joined as CS Manager</h3>
+                        <p class="text-base font-normal text-gray-300"><strong>Initial Scope:</strong> E-commerce (Tier 1 & Tier 2)</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-emerald-400">April 2024</time>
+                        <h3 class="text-xl font-semibold text-white">First Scope Expansion</h3>
+                        <p class="text-base font-normal text-gray-300"><strong>Added Scope:</strong> + Cash Loan (Tier 1)</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-emerald-400">March 2025</time>
+                        <h3 class="text-xl font-semibold text-white">Full Scope Expansion</h3>
+                        <p class="text-base font-normal text-gray-300"><strong>Final Scope:</strong> + Cash Loan (Tier 2)<br/>Managing CS across two core business pillars.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Initiatives Section -->
+    <section class="bg-gray-800 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:max-w-4xl text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Key Initiatives & Projects
+                </h2>
+                <p class="mt-6 text-lg leading-8 text-gray-300">
+                    A selection of high-impact projects I've initiated and delivered to drive efficiency, automation, and customer experience.
+                </p>
+            </div>
+            <!-- Project Cards -->
+            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                
+                <!-- Project 1 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-route text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Chat Routing Redesign</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-emerald-200 text-emerald-800 self-start">Implemented</span>
+                    <p class="mt-2 text-gray-300">
+                        Successfully reduced chat transfer cases by <strong>66%</strong>, leading to faster FCR and higher agent efficiency.
+                    </p>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-robot text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">2 RPA Solutions</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-yellow-200 text-yellow-800 self-start">Requested</span>
+                    <p class="mt-2 text-gray-300">
+                        Initiated and launched RPA for payment verification and automated VA code generation, freeing up significant agent time.
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-diagram-project text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">BNC Process Streamline</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-emerald-200 text-emerald-800 self-start">Implemented</span>
+                    <p class="mt-2 text-gray-300">
+                        Automated the escalation process for "Payment Not Update" & "Penalty Waiver" cases with a key external funder.
+                    </p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-file-invoice-dollar text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Bill Visibility & Split Payment</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 self-start">In Product Review</span>
+                    <p class="mt-2 text-gray-300">
+                        Initiated feature to improve CSAT and reduce inquiries related to "Payment Info" and "VA Code Requests."
+                    </p>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-arrows-spin text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Dynamic Refund Button</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-yellow-200 text-yellow-800 self-start">Requested</span>
+                    <p class="mt-2 text-gray-300">
+                        Reduced unnecessary refund requests and friction by creating a more intelligent, dynamic feature for customers.
+                    </p>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="flex flex-col rounded-2xl bg-gray-900 p-8 shadow-xl border border-gray-700">
+                    <i class="fa-solid fa-shield-halved text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-white">Mandatory Seller Attributes</h3>
+                    <span class="mt-2 text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-emerald-200 text-emerald-800 self-start">Implemented</span>
+                    <p class="mt-2 text-gray-300">
+                        Proactively reduced "product not match" cases by making all key product attribute fields in the seller center mandatory.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Future Value -->
+    <section class="bg-gray-900 py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-0">
+                <!-- Column 1: Leadership Commitment -->
+                <div>
+                    <h3 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        Beyond the Projects: My Commitment
+                    </h3>
+                    <ul role="list" class="custom-list mt-8 space-y-4 text-gray-300 text-lg">
+                        <li>
+                            <strong>Full Ownership:</strong> Consistently delivered on all assigned tasks and projects, never missing a deadline or compromising on quality.
+                        </li>
+                        <li>
+                            <strong>Cross-Functional Collaboration:</strong> Built and maintain strong, effective partnerships with all key stakeholders (BNC, Finance, Legal, Collection).
+                        </li>
+                        <li>
+                            <strong>Proactive Mindset:</strong> My focus is always on identifying the root cause of customer and agent pain points to drive lasting, strategic solutions.
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 2: Future Value -->
+                <div class="flex items-center">
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700">
+                        <h3 class="text-2xl font-semibold text-white mb-4">
+                            Looking Ahead: Future Value
+                        </h3>
+                        <blockquote class="text-lg text-gray-200 italic leading-relaxed">
+                            "My plan for 2026 is to deliver further efficiencies, targeting an additional 6-7 agent reduction through next-phase automation."
+                            <footer class="mt-4 not-italic font-semibold text-emerald-400">— My Commitment to Continuous Improvement</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Final "Ask" Section -->
+    <section class="bg-emerald-700 py-20 sm:py-24">
+        <div class="mx-auto max-w-3xl px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                My Request
+            </h2>
+            <p class="mt-6 text-xl leading-8 text-emerald-100">
+                Based on the significant and permanent expansion of my role, the quantifiable billion-rupiah value I've delivered, and my commitment to future growth, I am requesting a formal review to align my compensation with my current scope of responsibility and my market value.
+            </p>
+            <p class="mt-10 text-2xl font-semibold text-white">
+                Thank you for your consideration.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+            <p class="text-gray-500">
+                Aditya Warman | Customer Service Manager | Akulaku.com (ASI) | November 2025
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
